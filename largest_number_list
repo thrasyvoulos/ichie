@@ -1,0 +1,6 @@
+	A=[5, 4, 17, 90, 66]
+	myMax = A[0]
+	for num in A:
+	    if myMax < num:
+	        myMax = num
+	print myMax
