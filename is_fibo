@@ -1,0 +1,14 @@
+from math import *
+for i in range(input()):
+    N=input()
+    x1=sqrt(5*N**2+4)
+    x2=sqrt(5*N**2-4)
+    P_square = x1%1==0 or x2%1==0
+    if (P_square):
+        print "IsFibo"
+    else:
+        print "IsNotFibo"
+
+'''A number N is a Fibonacci number if 5*N^2 ± 4 is a perfect square. 
+
+you can check a number to be a perfect square if: sqrt(N) % 1 == 0.'''
