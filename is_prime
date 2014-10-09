@@ -1,0 +1,13 @@
+import math
+number=int(raw_input()) 
+if number<=1 or number%2==0:  
+	   print False
+else:
+	   k=int(math.sqrt(number))
+	   for check in range(3,int(math.sqrt(number)+1),2): 
+	       print check
+	       print k
+	       if number%check==0 or number%(check+2)==0:  
+	           print False
+	       else:
+	           print True
